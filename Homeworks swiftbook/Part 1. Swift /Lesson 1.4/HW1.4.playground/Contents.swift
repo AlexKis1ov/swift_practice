@@ -9,19 +9,17 @@ import UIKit
  > Cумма вклада увеличивается с каждым годом и процент нужно считать уже от увелеченной суммы.
   */
 
-var deposit = 500000.0
+let deposit = 500000.0
+var profit = 0.0
 let rate = 11.0
 let period = 5
 
-let startDeposit = deposit
-
 for _ in 1...period {
-	deposit *= (rate / 100.0 + 1.0)
+	let allSumOnDeposit = deposit + profit
+	profit += allSumOnDeposit * (rate / 100.0 + 1.0) - allSumOnDeposit
 }
 
-let profit = deposit - startDeposit
-
-print("Сумма вклада через \(period) лет увеличится на \(round(profit * 100) / 100) и составит \(round(deposit * 100) / 100) рублей")
+print("Сумма вклада через \(period) лет увеличится на \(round(profit * 100) / 100) и составит \(round((deposit + profit) * 100) / 100) рублей")
 
 /*:
  ## Задание 2
