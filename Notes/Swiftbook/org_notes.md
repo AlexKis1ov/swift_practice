@@ -1,4 +1,4 @@
-![](/Notes/Swiftbook/contents/важная%20информация%20swiftbook.jpeg)
+![pic0](/Notes/Swiftbook/contents/важная%20информация%20swiftbook.jpeg)
 
 Почта: lex.efimov@swiftbook.ru
 
