@@ -1,6 +1,5 @@
-
 # Swift practice
-<span style="color:red"> </span>
+
 
 ## Swiftbook
 
@@ -9,8 +8,8 @@
 - [Организационные заметки](Notes/Swiftbook/org_notes.md)
 - [Урок 1. Введение. Синтаксис Swift, основные концепции](Notes/Swiftbook/Swift/1.md)
 - [Урок 2. Базовые операторы. Строки и символы](Notes/Swiftbook/Swift/2.md)
-- [Урок 3. Условные инструкции. Опциональные типы данных]()
-- [Урок 4. Типы коллекций. Циклы]()
+- [Урок 3. Условные инструкции. Опциональные типы данных](Notes/Swiftbook/Swift/3.md)
+- [Урок 4. Типы коллекций. Циклы](Notes/Swiftbook/Swift/4.md)
 
 ### Swiftbook Homeworks
 
