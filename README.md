@@ -1,6 +1,5 @@
 # Swift practice
 
-
 ## Swiftbook
 
 ### Theoretical navigation
