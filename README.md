@@ -2,7 +2,7 @@
 
 ## Swiftbook
 
-[Полезные заметки по правильному написанию кода]()
+[Полезные заметки по правильному написанию кода](Notes/Swiftbook/advices.md)
 ### Theoretical navigation
 
 - [Организационные заметки](Notes/Swiftbook/org_notes.md)
