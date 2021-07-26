@@ -10,9 +10,10 @@ import UIKit
   */
 
 let deposit = 500000.0
-var profit = 0.0
 let rate = 11.0
 let period = 5
+
+var profit = 0.0
 
 for _ in 1...period {
 	let allSumOnDeposit = deposit + profit
