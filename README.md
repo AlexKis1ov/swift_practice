@@ -2,7 +2,7 @@
 
 ## Swiftbook
 
-[Полезные заметки по правильному написанию кода]()
+[Полезные заметки по правильному написанию кода](Notes/Swiftbook/advices.md)
 ### Theoretical navigation
 
 - [Организационные заметки](Notes/Swiftbook/org_notes.md)
@@ -17,6 +17,7 @@
 - [HW1.1](Homeworks_swiftbook/Part1_Swift/Lesson_1.2/HW1.1.playground/Pages)
 - [HW1.2](Homeworks_swiftbook/Part1_Swift/Lesson_1.3/HW1.2.playground/Contents.swift)
 - [HW1.3](Homeworks_swiftbook/Part1_Swift/Lesson_1.4/HW1.3.playground/Pages)
+- [HW1.4](Homeworks_swiftbook/Part1_Swift/Lesson_1.5/HW1.4.playground/Contents.swift)
 
 
 ---
