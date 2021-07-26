@@ -9,6 +9,7 @@
 - [Урок 2. Базовые операторы. Строки и символы](Notes/Swiftbook/Swift/2.md)
 - [Урок 3. Условные инструкции. Опциональные типы данных](Notes/Swiftbook/Swift/3.md)
 - [Урок 4. Типы коллекций. Циклы](Notes/Swiftbook/Swift/4.md)
+- [Урок 5. Функции](Notes/Swiftbook/Swift/5.md)
 
 ### Swiftbook Homeworks
 
