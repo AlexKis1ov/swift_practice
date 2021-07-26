@@ -5,11 +5,11 @@
 ### Theoretical navigation
 
 - [Организационные заметки](Notes/Swiftbook/org_notes.md)
-- [Урок 1. Введение. Синтаксис Swift, основные концепции](Notes/Swiftbook/Swift/1.md)
+- [Урок 1. Введение. Синтаксис Swift, основные концепции](Notes/Swiftbook/Swift/1.md) (Не заполнен)
 - [Урок 2. Базовые операторы. Строки и символы](Notes/Swiftbook/Swift/2.md)
-- [Урок 3. Условные инструкции. Опциональные типы данных](Notes/Swiftbook/Swift/3.md)
-- [Урок 4. Типы коллекций. Циклы](Notes/Swiftbook/Swift/4.md)
-- [Урок 5. Функции](Notes/Swiftbook/Swift/5.md)
+- [Урок 3. Условные инструкции. Опциональные типы данных](Notes/Swiftbook/Swift/3.md) (Не заполнен)
+- [Урок 4. Типы коллекций. Циклы](Notes/Swiftbook/Swift/4.md) (Не заполнен)
+- [Урок 5. Функции](Notes/Swiftbook/Swift/5.md) (Не заполнен)
 
 ### Swiftbook Homeworks
 
