@@ -101,7 +101,7 @@ let rangeArray = giveArrayOfFange(firstElement: 1, lastElement: 100)
 func filterCollection(array: [Int], closure: (Int) -> Bool) -> [Int] {
 	var retunedArray: [Int] = []
 	for element in array {
-		if closure(element) {
+		if !closure(element) {
 			retunedArray.append(element)
 		}
 	}
