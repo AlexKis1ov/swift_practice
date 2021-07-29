@@ -27,7 +27,7 @@ if condition {
 condition ? trueCondition : falseCondition
 ```
 
-Пример 
+*Пример* 
 ```swift
 let a = 5
 let b = 10
