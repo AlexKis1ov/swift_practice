@@ -7,11 +7,12 @@
 [Организационные заметки](Notes/Swiftbook/org_notes.md)
 ### Theoretical navigation
 
-- [Урок 1. Введение. Синтаксис Swift, основные концепции](Notes/Swiftbook/Swift/swift_1.md) (Не заполнен)
-- [Урок 2. Базовые операторы. Строки и символы](Notes/Swiftbook/Swift/swift_2.md)
-- [Урок 3. Условные инструкции. Опциональные типы данных](Notes/Swiftbook/Swift/swift_3.md) (Не заполнен)
-- [Урок 4. Типы коллекций. Циклы](Notes/Swiftbook/Swift/swift_4.md)
-- [Урок 5. Функции и замыкания](Notes/Swiftbook/Swift/swift_5.md) (Не заполнен)
+- [Урок 1. Введение. Синтаксис Swift, основные концепции](Notes/Swiftbook/Swift/swift_1.md) 
+- [Урок 2. Базовые операторы. Строки и символы](Notes/Swiftbook/Swift/swift_2.md) ✅
+- [Урок 3. Условные инструкции. Опциональные типы данных](Notes/Swiftbook/Swift/swift_3.md) 
+- [Урок 4. Типы коллекций. Циклы](Notes/Swiftbook/Swift/swift_4.md) ✅
+- [Урок 5. Функции и замыкания](Notes/Swiftbook/Swift/swift_5.md)
+- [Урок 6. ООП в Swift](Notes/Swiftbook/Swift/swift_6.md)
 
 
 ### Swiftbook Homeworks
