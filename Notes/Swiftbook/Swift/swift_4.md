@@ -1,10 +1,16 @@
 <!-- Урок 4. Типы коллекций. Циклы -->
-
-# Типы коллекций
-- [Массивы](##Массивы)
-- [Множетсва](##Множетсва)
-- [Словари](##Словари)
+- [Типы коллекций](#типы-коллекций)
+  - [Массивы](#массивы)
+  - [Множетсва](#множетсва)
+  - [Словари](#словари)
+  - [Использование логического свойства isEmpty](#использование-логического-свойства-isempty)
+- [Циклы](#циклы)
+  - [For-in](#for-in)
+  - [While](#while)
+    - [Repeat-while](#repeat-while)
 ---
+# Типы коллекций
+
 ## Массивы
 
 Хранят в себе упорядоченные, но при этом не уникальные значения одного типа
@@ -68,13 +74,6 @@ integers = [10, 20, 40]
 
 // Замена значения по индексу 2 на новое значение
 integers[2] = 30
-```
-
-## Использование логического свойства isEmpty
-```swift
-if !integers.isEmpty {
-    print(integers)
-}
 ```
 
 ## Множетсва
@@ -143,3 +142,107 @@ carWashQueue.count
 carWashQueue.removeAll()
 carWashQueue = [:]
 ```
+
+## Использование логического свойства isEmpty
+```swift
+if !integers.isEmpty {
+    print(integers)
+}
+```
+Работает со всеми коллекциями
+
+# Циклы
+
+## For-in 
+
+- Перебор любых видов коллекций
+- Один проход цикла - это итерация
+
+```swift
+for counter in lower…upper {
+    some code
+}
+```
+
+
+❗️ Имя свойства counter следует давать в единственном числе относительно имени коллекции
+
+*Итерация по диапазону:*
+```swift
+for _ in 1...5 {
+    print("Hello!")
+}
+```
+
+*Итерация по массиву:*
+```swift
+let fruits = [
+    "apple",
+    "banana",
+    "pineapple",
+    "apple",
+    "pear",
+    "apple",
+    "plum",
+    "apricot",
+    "apple"
+]
+
+var appleCount = 0
+
+for fruit in fruits {
+    if fruit == "apple" {
+        appleCount += 1
+    }
+}
+
+print(appleCount) // 4
+```
+
+*Итерация по словарю:*
+```swift
+let numberOfLegs = ["spider": 8, "ant": 6, "cat": 4]
+
+for (animalName, legCount) in numberOfLegs {
+    print("\(animalName)s have \(legCount) legs")
+}
+```
+
+*Итерация по тексту:*
+```swift
+let text = "Hello!"
+
+for char in text {
+    print(char)
+}
+```
+
+## While 
+*Синтаксис*
+```swift 
+while condition {
+    some code
+}
+```
+*Пример*
+```swift
+var counter = 5
+
+while counter > 0 {
+    print(counter)
+    counter -= 1
+}
+```
+
+### Repeat-while
+
+В таком варианте сначала выпоняется одна интерация, после происходит проверка условия
+
+*Пример*
+```swift
+repeat {
+    print(counter)
+    counter -= 1
+} while counter > 5
+```
+
