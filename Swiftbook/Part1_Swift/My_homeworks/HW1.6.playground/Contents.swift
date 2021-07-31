@@ -26,20 +26,20 @@ import UIKit
  */
 
 class Orange {
-	var color: String = "Orange"
-	var taste: String = "Sweet"
-	let radius: Double
-	var orangeVolume: Double {
-		calculateOrangeVolume(radius)
-	}
+    var color: String = "Orange"
+    var taste: String = "Sweet"
+    let radius: Double
+    var orangeVolume: Double {
+        calculateOrangeVolume(radius)
+    }
 
-	init(radius: Double) {
-		self.radius = radius
-	}
+    init(radius: Double) {
+        self.radius = radius
+    }
 
-	func calculateOrangeVolume(_ radius: Double) -> Double {
-		4 / 3 * Double.pi * pow(radius, 3)
-	}
+    func calculateOrangeVolume(_ radius: Double) -> Double {
+        4 / 3 * Double.pi * pow(radius, 3)
+    }
 }
 
 let myOrange = Orange(radius: 4)
@@ -64,68 +64,70 @@ print("Orange has \(myOrange.color) color and \(myOrange.taste) taste. The volum
  */
 
 class Shape {
-	var height: Float = 0
-	var width: Float = 0
-	var radius: Float = 0
-	var square: Float {
-		squareOfShape()
-	}
-	var perimeter: Float {
-		perimeterOfShape()
-	}
-	var description: String {
-		"Площадь фигуры \(type(of: self)) равна \(square), периметр (длина) равен(а) \(perimeter)"
-	}
+    var height: Float = 0
+    var width: Float = 0
+    var radius: Float = 0
+    var square: Float {
+        squareOfShape()
+    }
 
-	init(height: Float, width: Float) {
-		self.height = height
-		self.width = width
-	}
+    var perimeter: Float {
+        perimeterOfShape()
+    }
 
-	init(radius: Float) {
-		self.radius = radius
-	}
+    var description: String {
+        "Площадь фигуры \(type(of: self)) равна \(square), периметр (длина) равен(а) \(perimeter)"
+    }
 
-	func squareOfShape() -> Float {
-		0
-	}
+    init(height: Float, width: Float) {
+        self.height = height
+        self.width = width
+    }
 
-	func perimeterOfShape() -> Float {
-		0
-	}
+    init(radius: Float) {
+        self.radius = radius
+    }
+
+    func squareOfShape() -> Float {
+        0
+    }
+
+    func perimeterOfShape() -> Float {
+        0
+    }
 }
 
 /*:
  2.2. Создайте классы `Circle`, `Rectangle` и `Ellipse`, унаследовав их от `Shape`. Переопределите методы `squareOfShape` и `perimeterOfShape` для каждого класса в соответствии с правилом расчета площади и периметра (длины) конкретной фигуры.
  */
 class Circle: Shape {
-	override func squareOfShape() -> Float {
-		Float.pi * pow(radius, 2)
-	}
+    override func squareOfShape() -> Float {
+        Float.pi * pow(radius, 2)
+    }
 
-	override func perimeterOfShape() -> Float {
-		2 * Float.pi * radius
-	}
+    override func perimeterOfShape() -> Float {
+        2 * Float.pi * radius
+    }
 }
 
 class Rectangle: Shape {
-	override func squareOfShape() -> Float {
-		height * width
-	}
+    override func squareOfShape() -> Float {
+        height * width
+    }
 
-	override func perimeterOfShape() -> Float {
-		(height + width) * 2
-	}
+    override func perimeterOfShape() -> Float {
+        (height + width) * 2
+    }
 }
 
 class Ellipse: Shape {
-	override func squareOfShape() -> Float {
-		Float.pi * (height / 2) * (width / 2)
-	}
+    override func squareOfShape() -> Float {
+        Float.pi * (height / 2) * (width / 2)
+    }
 
-	override func perimeterOfShape() -> Float {
-		2 * Float.pi * sqrt((pow(width, 2) + pow(height, 2)) / 8)
-	}
+    override func perimeterOfShape() -> Float {
+        2 * Float.pi * sqrt((pow(width, 2) + pow(height, 2)) / 8)
+    }
 }
 
 //: 2.3 Создайте по экземпляру каждого класса, кроме `Shape` и проинициализируйте свойства `height` и `width` или `radius` для каждого класса в любые значения. Выведите значение свойства `description` на консоль.
@@ -147,49 +149,49 @@ print(myEllipse.description)
  - `surname`
  */
 class Employee {
-	let salary: Int
-	let name: String
-	let surname: String
+    let salary: Int
+    let name: String
+    let surname: String
 
-	init(salary: Int, name: String, surname: String) {
-		self.salary = salary
-		self.name = name
-		self.surname = surname
-	}
+    init(salary: Int, name: String, surname: String) {
+        self.salary = salary
+        self.name = name
+        self.surname = surname
+    }
 }
 
 //: 3.2 Создайте массив `names` со следующими именами: *John*, *Aaron*, *Tim*, *Ted*, *Steven*. И еще один массив `surnames` со следующими фамилиями: *Smith*, *Dow*, *Isaacson*, *Pennyworth*, *Jankins*. Массивы должны быть созданы вне класса.
 let names = [
-	"John",
-	"Aaron",
-	"Tim",
-	"Ted",
-	"Steven"
+    "John",
+    "Aaron",
+    "Tim",
+    "Ted",
+    "Steven"
 ]
 let surnames = [
-	"Smith",
-	"Dow",
-	"Isaacson",
-	"Pennyworth",
-	"Jenkins"
+    "Smith",
+    "Dow",
+    "Isaacson",
+    "Pennyworth",
+    "Jenkins"
 ]
 //: 3.3 Объявите массив `employees` и создайте цикл, в котором он заполняется десятью объектами класса `Employee` таким образом, что свойства `name` и `surname` инициализируются случайными именами и фамилиями из массивов `names` и `surnames`, соответственно. Свойство `salary` (зарплата) тоже должно генерироваться в случайном диапазоне от *$1000* до *$2000*
 var employees: [Employee] = []
 
 for _ in 1...10 {
-	employees.append(Employee(
-		salary: Int.random(in: 1000...2000),
-		name: names.randomElement()!,
-		surname: surnames.randomElement()!
-	))
+    employees.append(Employee(
+        salary: Int.random(in: 1000...2000),
+        name: names.randomElement()!,
+        surname: surnames.randomElement()!
+    ))
 }
 
 //: 3.4 Переберите массив `employees` и выведите информацию по каждому сотруднику в виде: «<имя> <фимилия>’s salary is $<... >»
 func printEmployeeInfo(of employees: [Employee]) {
-	print()
-	for employee in employees {
-		print("\(employee.name) \(employee.surname) salary is \(employee.salary)$")
-	}
+    print()
+    for employee in employees {
+        print("\(employee.name) \(employee.surname) salary is \(employee.salary)$")
+    }
 }
 
 printEmployeeInfo(of: employees)
