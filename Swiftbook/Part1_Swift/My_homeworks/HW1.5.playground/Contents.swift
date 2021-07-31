@@ -19,18 +19,18 @@ import UIKit
  */
 
 let games = [
-	"Салават Юлаев": [[3, 6], [5, 5], []],
-	"Авангард": [[2, 1]],
-	"АкБарс": [[3, 3], [1, 2]]
+	"Салават Юлаев": ["3:6", "5:5", ""],
+	"Авангард": ["2:1"],
+	"АкБарс": ["3:3", "1:2"]
 ]
 
 for (enemyTeam, gamesWithEnemyTeam) in games {
-	for gameResult in gamesWithEnemyTeam {
-		if gameResult.isEmpty {
+	for currentGame in gamesWithEnemyTeam {
+		if currentGame.isEmpty {
 			print("• Игра с \(enemyTeam) - N/A")
 			continue
 		}
-		print("• Игра с \(enemyTeam) - \(gameResult[0]):\(gameResult[1])")
+		print("• Игра с \(enemyTeam) - \(currentGame)")
 	}
 }
 
@@ -64,7 +64,7 @@ print("\nFinal sum: \(calculateSum(inWallet: wallet))\n")
  */
 
 func determineParityOfNumber(_ number: Int) -> Bool {
-	number % 2 == 0 ? true : false
+	number % 2 == 0
 }
 
 
@@ -73,7 +73,7 @@ func determineParityOfNumber(_ number: Int) -> Bool {
 */
 
 func divideOnThreeWithoutRemainder(_ number: Int) -> Bool {
-	number % 3 == 0 ? true : false
+	number % 3 == 0
 }
 
 /*:
@@ -101,7 +101,7 @@ let rangeArray = giveArrayOfFange(firstElement: 1, lastElement: 100)
 func filterCollection(array: [Int], closure: (Int) -> Bool) -> [Int] {
 	var retunedArray: [Int] = []
 	for element in array {
-		if closure(element) {
+		if !closure(element) {
 			retunedArray.append(element)
 		}
 	}
