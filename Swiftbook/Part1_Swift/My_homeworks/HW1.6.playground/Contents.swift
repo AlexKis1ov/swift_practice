@@ -74,7 +74,6 @@ class Shape {
     var perimeter: Float {
         perimeterOfShape()
     }
-
     var description: String {
         "Площадь фигуры \(type(of: self)) равна \(square), периметр (длина) равен(а) \(perimeter)"
     }
@@ -181,8 +180,8 @@ var employees: [Employee] = []
 for _ in 1...10 {
     employees.append(Employee(
         salary: Int.random(in: 1000...2000),
-        name: names.randomElement()!,
-        surname: surnames.randomElement()!
+        name: names.randomElement() ?? " ",
+        surname: surnames.randomElement() ?? " "
     ))
 }
 
