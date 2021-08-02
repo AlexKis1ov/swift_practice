@@ -12,14 +12,14 @@ var price = 0
 var totalSum = 0
 
 if count >= 20 {
-	price = 600
+    price = 600
 } else if count >= 10 {
-	price = 800
-} else if count > 0 && count <= 9 {
-	price = 1000
+    price = 800
+} else if count > 0, count <= 9 {
+    price = 1000
 } else {
-	print("wrong count")
-	price = 0
+    print("wrong count")
+    price = 0
 }
 
 totalSum = price * count

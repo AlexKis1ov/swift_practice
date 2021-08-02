@@ -45,16 +45,16 @@ print("Результат деления \(numberOne) на \(numberTwo) раве
 // Функция для перевода иррационального числа к рациональному
 // https://stackoverflow.com/questions/35895154/decimal-to-fraction-conversion-in-swift
 func rationalApproximationOf(x0: Double, withPrecision eps: Double = 1.0E-6) -> (Int, Int) {
-	var x = x0
-	var a = floor(x)
-	var (h1, k1, h, k) = (1, 0, Int(a), 1)
+    var x = x0
+    var a = floor(x)
+    var (h1, k1, h, k) = (1, 0, Int(a), 1)
 
-	while x - a > eps * Double(k) * Double(k) {
-		x = 1.0 / (x - a)
-		a = floor(x)
-		(h1, k1, h, k) = (h, k, h1 + Int(a) * h, k1 + Int(a) * k)
-	}
-	return (h, k)
+    while x - a > eps * Double(k) * Double(k) {
+        x = 1.0 / (x - a)
+        a = floor(x)
+        (h1, k1, h, k) = (h, k, h1 + Int(a) * h, k1 + Int(a) * k)
+    }
+    return (h, k)
 }
 
 let ittational = Double(numberOne) / Double(numberTwo)
@@ -88,7 +88,6 @@ var lifeInDays = (currentYear - yearOfBirth) * 360 // кол-во лет в пр
 lifeInDays += (currentMonth - monthOfBirth) * 30 // кол-во месяцев в промежутке в днях
 lifeInDays += currentDay - dayOfBirth // кол-во дней в промежутке в днях
 
-
 let lifeInYears = lifeInDays / 360
 let lifeInMonths = lifeInDays / 30
 let lifeInSecs = lifeInDays * 86400
@@ -96,15 +95,15 @@ let lifeInSecs = lifeInDays * 86400
 print("\(lifeInYears) years, \(lifeInMonths) months, \(lifeInDays) days and \(lifeInSecs) seconds have passed since my birth.")
 
 if monthOfBirth >= 1, monthOfBirth <= 3 {
-	print("Q1")
+    print("Q1")
 } else if monthOfBirth >= 4, monthOfBirth <= 6 {
-	print("Q2")
+    print("Q2")
 } else if monthOfBirth >= 7, monthOfBirth <= 9 {
-	print("Q3")
+    print("Q3")
 } else if monthOfBirth >= 10, monthOfBirth <= 12 {
-	print("Q4")
+    print("Q4")
 } else {
-	print("N/A")
+    print("N/A")
 }
 
 /*:

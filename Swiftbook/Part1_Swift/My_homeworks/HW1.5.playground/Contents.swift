@@ -4,34 +4,34 @@ import UIKit
 /*:
  ## Задание 1
  Создайте словарь, который содержит результаты игр спортивной команды. Ключом словаря должно быть название команды соперника, а в качестве значения должен быть массив с результатами игр с этим соперником. Необходимо вывести на консоль результаты игр. Выглядить это должно примерно следующим образом:
- 
+
  - Игра с Салават Юлаев - 3:6
- 
+
  - Игра с Салават Юлаев - 5:5
- 
+
  - Игра с Салават Юлаев - N/A
- 
+
  - Игра с Авангард - 2:1
-  
+
  - Игра с АкБарс - 3:3
- 
+
  - Игра с АкБарс - 1:2
  */
 
 let games = [
-	"Салават Юлаев": ["3:6", "5:5", ""],
-	"Авангард": ["2:1"],
-	"АкБарс": ["3:3", "1:2"]
+    "Салават Юлаев": ["3:6", "5:5", ""],
+    "Авангард": ["2:1"],
+    "АкБарс": ["3:3", "1:2"]
 ]
 
 for (enemyTeam, gamesWithEnemyTeam) in games {
-	for currentGame in gamesWithEnemyTeam {
-		if currentGame.isEmpty {
-			print("• Игра с \(enemyTeam) - N/A")
-			continue
-		}
-		print("• Игра с \(enemyTeam) - \(currentGame)")
-	}
+    for currentGame in gamesWithEnemyTeam {
+        if currentGame.isEmpty {
+            print("• Игра с \(enemyTeam) - N/A")
+            continue
+        }
+        print("• Игра с \(enemyTeam) - \(currentGame)")
+    }
 }
 
 /*:
@@ -40,20 +40,20 @@ for (enemyTeam, gamesWithEnemyTeam) in games {
  */
 
 let wallet = [
-	50: 0,
-	100: 10,
-	500: 3,
-	1000: 0,
-	2000: 2,
-	5000: 10
+    50: 0,
+    100: 10,
+    500: 3,
+    1000: 0,
+    2000: 2,
+    5000: 10
 ]
 
 func calculateSum(inWallet wallet: [Int: Int]) -> Int {
-	var allSum = 0
-	for (nominalValue, quantity) in wallet {
-		allSum += nominalValue * quantity
-	}
-	return allSum
+    var allSum = 0
+    for (nominalValue, quantity) in wallet {
+        allSum += nominalValue * quantity
+    }
+    return allSum
 }
 
 print("\nFinal sum: \(calculateSum(inWallet: wallet))\n")
@@ -64,16 +64,15 @@ print("\nFinal sum: \(calculateSum(inWallet: wallet))\n")
  */
 
 func determineParityOfNumber(_ number: Int) -> Bool {
-	number % 2 == 0
+    number % 2 == 0
 }
 
-
 /*:
-3.2 Создайте функцию, которая определяет делится ли число на *3* без остатка. Функция так же должна возвращать булево значение.
-*/
+ 3.2 Создайте функцию, которая определяет делится ли число на *3* без остатка. Функция так же должна возвращать булево значение.
+ */
 
 func divideOnThreeWithoutRemainder(_ number: Int) -> Bool {
-	number % 3 == 0
+    number % 3 == 0
 }
 
 /*:
@@ -81,16 +80,16 @@ func divideOnThreeWithoutRemainder(_ number: Int) -> Bool {
  */
 
 func giveArrayOfFange(firstElement first: Int, lastElement last: Int) -> [Int] {
-	var returnedArray: [Int] = []
-	for number in first...last {
-		returnedArray.append(number)
-	}
-	return returnedArray
+    var returnedArray: [Int] = []
+    for number in first ... last {
+        returnedArray.append(number)
+    }
+    return returnedArray
 }
 
 /*:
-3.4 Создайте массив чисел от *1* до *100*, используя для этого вышесозданную функцию
- */
+ 3.4 Создайте массив чисел от *1* до *100*, используя для этого вышесозданную функцию
+  */
 
 let rangeArray = giveArrayOfFange(firstElement: 1, lastElement: 100)
 
@@ -99,13 +98,13 @@ let rangeArray = giveArrayOfFange(firstElement: 1, lastElement: 100)
  */
 
 func filterCollection(array: [Int], closure: (Int) -> Bool) -> [Int] {
-	var retunedArray: [Int] = []
-	for element in array {
-		if !closure(element) {
-			retunedArray.append(element)
-		}
-	}
-	return retunedArray
+    var retunedArray: [Int] = []
+    for element in array {
+        if !closure(element) {
+            retunedArray.append(element)
+        }
+    }
+    return retunedArray
 }
 
 print(filterCollection(array: rangeArray, closure: determineParityOfNumber))
