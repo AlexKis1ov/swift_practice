@@ -1,4 +1,4 @@
-import UIKit
+import Foundation
 
 //: # Home Work 6
 
@@ -26,18 +26,20 @@ import UIKit
  */
 
 class Orange {
-    var color: String = "Orange"
-    var taste: String = "Sweet"
+    var color: String
+    var taste: String
     let radius: Double
     var orangeVolume: Double {
-        calculateOrangeVolume(radius)
+        calculateOrangeVolume()
     }
 
-    init(radius: Double) {
+    init(color: String = "", taste: String = "", radius: Double) {
+        self.color = color
+        self.taste = taste
         self.radius = radius
     }
 
-    func calculateOrangeVolume(_ radius: Double) -> Double {
+    private func calculateOrangeVolume() -> Double {
         4 / 3 * Double.pi * pow(radius, 3)
     }
 }
@@ -67,6 +69,7 @@ class Shape {
     var height: Float = 0
     var width: Float = 0
     var radius: Float = 0
+
     var square: Float {
         squareOfShape()
     }
@@ -74,6 +77,7 @@ class Shape {
     var perimeter: Float {
         perimeterOfShape()
     }
+
     var description: String {
         "Площадь фигуры \(type(of: self)) равна \(square), периметр (длина) равен(а) \(perimeter)"
     }
@@ -180,14 +184,13 @@ var employees: [Employee] = []
 for _ in 1...10 {
     employees.append(Employee(
         salary: Int.random(in: 1000...2000),
-        name: names.randomElement() ?? " ",
-        surname: surnames.randomElement() ?? " "
+        name: names.randomElement()!,
+        surname: surnames.randomElement()!
     ))
 }
 
 //: 3.4 Переберите массив `employees` и выведите информацию по каждому сотруднику в виде: «<имя> <фимилия>’s salary is $<... >»
 func printEmployeeInfo(of employees: [Employee]) {
-    print()
     for employee in employees {
         print("\(employee.name) \(employee.surname) salary is \(employee.salary)$")
     }
