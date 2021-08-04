@@ -70,9 +70,8 @@ anotherIntegers.removeAll()
 // Обнуление массива путём присваивания ему пустого массиву
 integers = []
 
-integers = [10, 20, 40]
-
 // Замена значения по индексу 2 на новое значение
+integers = [10, 20, 40]
 integers[2] = 30
 ```
 
@@ -167,7 +166,7 @@ for counter in lower…upper {
 
 ❗️ Имя свойства counter следует давать в единственном числе относительно имени коллекции
 
-*Итерация по диапазону:*
+*Перебор диапазона:*
 ```swift
 for _ in 1...5 {
     print("Hello!")
@@ -199,7 +198,7 @@ for fruit in fruits {
 print(appleCount) // 4
 ```
 
-*Итерация по словарю:*
+*Перебор словаря:*
 ```swift
 let numberOfLegs = ["spider": 8, "ant": 6, "cat": 4]
 
@@ -208,7 +207,7 @@ for (animalName, legCount) in numberOfLegs {
 }
 ```
 
-*Итерация по тексту:*
+*Перебор текста:*
 ```swift
 let text = "Hello!"
 
