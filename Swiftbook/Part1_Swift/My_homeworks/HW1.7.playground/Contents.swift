@@ -79,43 +79,29 @@ let dollarCurrency: CurrencyUnit = .dollar(
  */
 
 func showCurrencyInfo(currency: CurrencyUnit) {
-    struct CurrencyInfo {
-        var usedCoutries: String = ""
-        var acronym: String = ""
-        var currencyType: String = ""
-    }
+    let usedCoutries: String
+    let currencyAcronym: String
+    let currencyType: String
 
-    let returnedCurrency: CurrencyInfo
 
     switch currency {
     case let .rouble(countries, acronym):
-        returnedCurrency = CurrencyInfo(
-            usedCoutries: countries.joined(separator: ", "),
-            acronym: acronym.uppercased(),
-            currencyType: "Российский рубль"
-        )
+        usedCoutries = countries.joined(separator: ", ")
+        currencyAcronym = acronym.uppercased()
+        currencyType = "Российский рубль"
 
     case let .dollar(countries, acronym, dollarType):
-        returnedCurrency = CurrencyInfo(
-            usedCoutries: countries.joined(separator: ", "),
-            acronym: acronym.uppercased(),
-            currencyType: dollarType.rawValue
-        )
+        usedCoutries = countries.joined(separator: ", ")
+        currencyAcronym = acronym.uppercased()
+        currencyType = dollarType.rawValue
 
     case let .euro(countries, acronym):
-        returnedCurrency = CurrencyInfo(
-            usedCoutries: countries.joined(separator: ", "),
-            acronym: acronym.uppercased(),
-            currencyType: "Евро"
-        )
+        usedCoutries = countries.joined(separator: ", ")
+        currencyAcronym = acronym.uppercased()
+        currencyType = "Евро"
     }
 
-    /*
-     Можно было 3 принта в кейсах или 3 перепенные в функции,
-     но я решил, что сделать структуру для описания валюты, будет лучше.
-     Поправьте, если не прав =)
-     */
-    print("\(returnedCurrency.currencyType). Катируется в: \(returnedCurrency.usedCoutries). Краткое наименование: \(returnedCurrency.acronym)")
+    print("\(currencyType). Катируется в: \(usedCoutries). Краткое наименование: \(currencyAcronym)")
 }
 
 showCurrencyInfo(currency: dollarCurrency)
