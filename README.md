@@ -14,15 +14,17 @@
 - [Урок 5. Функции и замыкания](Swiftbook/Part1_Swift/Notes_Swift/swift_5.md)
 - [Урок 6. ООП в Swift](Swiftbook/Part1_Swift/Notes_Swift/swift_6.md)
 - [Урок 7. Структуры. Перечисления](Swiftbook/Part1_Swift/Notes_Swift/swift_7.md) ✅
+- [Урок 8. Дополнительные концепции Swift](Swiftbook/Part1_Swift/Notes_Swift/swift_8.md)
 
 
 ### Swiftbook Homeworks
 
-- [HW1.1](Swiftbook/Part1_Swift/Lesson_1.2/HW1.1.playground/Pages)
-- [HW1.2](Swiftbook/Part1_Swift/Lesson_1.3/HW1.2.playground/Contents.swift)
-- [HW1.3](Swiftbook/Part1_Swift/Lesson_1.4/HW1.3.playground/Pages)
-- [HW1.4](Swiftbook/Part1_Swift/Lesson_1.5/HW1.4.playground/Contents.swift)
-- [HW1.5](Swiftbook/Part1_Swift/Lesson_1.6/HW1.5.playground/Contents.swift)
-- [HW1.6](Swiftbook/Part1_Swift/Lesson_1.7/HW1.6.playground/Contents.swift)
+- [HW1.1](Swiftbook/Part1_Swift/Lessons/Lesson_1.2/HW1.1.playground/Pages)
+- [HW1.2](Swiftbook/Part1_Swift/Lessons/Lesson_1.3/HW1.2.playground/Contents.swift)
+- [HW1.3](Swiftbook/Part1_Swift/Lessons/Lesson_1.4/HW1.3.playground/Pages)
+- [HW1.4](Swiftbook/Part1_Swift/Lessons/Lesson_1.5/HW1.4.playground/Contents.swift)
+- [HW1.5](Swiftbook/Part1_Swift/Lessons/Lesson_1.6/HW1.5.playground/Contents.swift)
+- [HW1.6](Swiftbook/Part1_Swift/Lessons/Lesson_1.7/HW1.6.playground/Contents.swift)
+- [HW1.7](Swiftbook/Part1_Swift/Lessons/Lesson_1.8/HW1.7.playground/Contents.swift)
 
 ---
